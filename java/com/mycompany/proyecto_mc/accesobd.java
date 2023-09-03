@@ -1,4 +1,4 @@
-
+//Clase editada por Juan Jimenez
 package com.mycompany.proyecto_mc;
 
 import java.sql.Connection;
@@ -42,7 +42,7 @@ public class accesobd {
             Driver driver =(Driver)  //1 | ta
                     Class.forName("com.mysql.jdbc.Driver").newInstance();
                     DriverManager.registerDriver(driver);
-                    String cadena ="jdbc:mysql://"+getHost()+"/"+getBd(); //2 | (ta + to)
+                    String cadena ="jdbc:mysql://"+getHost()+"/"+getBd(); //2 | (ta + too)
                     conexion= DriverManager.getConnection(cadena, getUser(), getPasword()); //3 | ta
                     System.out.println("Conexion exitosa a la base de datos");
         }catch (Exception e){

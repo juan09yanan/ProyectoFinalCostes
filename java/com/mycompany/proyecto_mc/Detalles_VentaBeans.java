@@ -1,4 +1,4 @@
-
+//Clase hecha por Juan Jimenez
 package com.mycompany.proyecto_mc;
 
 import java.sql.Connection;

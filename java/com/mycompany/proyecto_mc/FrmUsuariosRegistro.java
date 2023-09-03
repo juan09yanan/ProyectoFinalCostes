@@ -1,4 +1,4 @@
-
+//Clase editada por Juan Jimenez
 package com.mycompany.proyecto_mc;
 
 import javax.swing.JOptionPane;
@@ -162,9 +162,11 @@ public class FrmUsuariosRegistro extends javax.swing.JFrame {
             this.setVisible(false);
             INICIO_APP ss = new INICIO_APP();//10 ta
             ss.setVisible(true);
+            //-----------------------------------------------------------------
             //TIEMPO TOTAL DEL METODO
             //T= ta + ta + ta + ta + ta + tc + tc + tc + tc + ta
             //T= 6ta + 4tc
+            //-----------------------------------------------------------------
         }
         
 
