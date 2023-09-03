@@ -118,7 +118,7 @@ public class FrmUsuarios_login extends javax.swing.JFrame {
         // TODO add your handling code here:
         password.setText("");
     }// GEN-LAST:event_passwordMouseClicked
-    // public int abc = 0;
+     // public int abc = 0;
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jButton2ActionPerformed
 
@@ -163,9 +163,7 @@ public class FrmUsuarios_login extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Error al cifrar la contraseña");
             }
-            // TIEMPO TOTAL DEL METODO
-            // T= ta+ta+ta+ta+tc+tc+ta+tc+tc
-            // T= 5ta+4tc
+
         }
     }// GEN-LAST:event_jButton3ActionPerformed
 
