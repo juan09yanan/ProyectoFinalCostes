@@ -1,4 +1,5 @@
 //Clase editada por Juan Jimenez
+//Aplicacion del calculo de costes de los metodos
 package com.mycompany.proyecto_mc;
 
 import java.sql.Connection;

@@ -1,4 +1,5 @@
 //Clase editada por Juan Jimenez
+//aplicacion del calculo de los costes de los metodos
 package com.mycompany.proyecto_mc;
 
 import javax.swing.JOptionPane;
