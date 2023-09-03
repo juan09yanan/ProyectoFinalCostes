@@ -1,4 +1,4 @@
-
+/* editada por Edison Jimenez */
 package com.mycompany.proyecto_mc;
 
 import com.mysql.cj.xdevapi.Result;
@@ -18,19 +18,18 @@ public class UsuariosBeans {
     accesobd bd;
 
     public UsuariosBeans() {
-        bd = new accesobd("localhost", "root", "", "tecnologia");//1| ta
+        bd = new accesobd("localhost", "root", "", "tecnologia");// 1| ta
         bd.conectarBD();
-        //T = ta
+        // T = ta
     }
-    
 
     public int getID_usuario() {
         return ID_usuario;
     }
 
     public void setID_usuario(int ID_usuario) {
-        this.ID_usuario = ID_usuario;//1| ta
-        //T = ta
+        this.ID_usuario = ID_usuario;// 1| ta
+        // T = ta
     }
 
     public String getPassword() {
@@ -38,8 +37,8 @@ public class UsuariosBeans {
     }
 
     public void setPassword(String password) {
-        this.password = password;//1| ta
-        //T = ta
+        this.password = password;// 1| ta
+        // T = ta
     }
 
     public String getNombre() {
@@ -47,8 +46,8 @@ public class UsuariosBeans {
     }
 
     public void setNombre(String nombre) {
-        this.nombre = nombre;//1| ta
-        //T = ta
+        this.nombre = nombre;// 1| ta
+        // T = ta
     }
 
     public accesobd getBd() {
@@ -56,15 +55,17 @@ public class UsuariosBeans {
     }
 
     public void setBd(accesobd bd) {
-        this.bd = bd;//1| ta
-        //T = ta
+        this.bd = bd;// 1| ta
+        // T = ta
     }
 
     public void insertar_Usuario() throws SQLException {
 
-        String cadena = "insert into Usuarios values ('" + getID_usuario() + "','" + "" + "','" + getNombre() + "')";//1| ta+ to
+        String cadena = "insert into Usuarios values ('" + getID_usuario() + "','" + "" + "','" + getNombre() + "')";// 1|
+                                                                                                                     // ta+
+                                                                                                                     // to
         bd.actualizarBD(cadena);
-        //T = ta + to
+        // T = ta + to
 
     }
 
@@ -81,17 +82,17 @@ public class UsuariosBeans {
         Statement st;
         ResultSet rs;
 
-        String sql = "SELECT ID_usuario, password, nombre FROM usuarios WHERE ID_usuario=?";//1| ta
+        String sql = "SELECT ID_usuario, password, nombre FROM usuarios WHERE ID_usuario=?";// 1| ta
         try {
-            conet = getConnection();//2| ta
-            st = conet.createStatement();//3| ta
-            PreparedStatement preparedStatement = conet.prepareStatement(sql);//4| ta
-            preparedStatement.setInt(1, getID_usuario());//5| ta
-            rs = preparedStatement.executeQuery();//6| ta
+            conet = getConnection();// 2| ta
+            st = conet.createStatement();// 3| ta
+            PreparedStatement preparedStatement = conet.prepareStatement(sql);// 4| ta
+            preparedStatement.setInt(1, getID_usuario());// 5| ta
+            rs = preparedStatement.executeQuery();// 6| ta
 
-            if (rs.next()) {//7| n(tc)
-                if (getPassword().equals(rs.getString("password"))) {//8| n(tc)
-                    setNombre(rs.getString("nombre"));//9| ta
+            if (rs.next()) {// 7| n(tc)
+                if (getPassword().equals(rs.getString("password"))) {// 8| n(tc)
+                    setNombre(rs.getString("nombre"));// 9| ta
                     return true;
                 } else {
                     return false;
@@ -102,11 +103,12 @@ public class UsuariosBeans {
             e.printStackTrace();
             return false;
         }
-        /*Tiempo total del metodo
-        T= ta + ta + ta + ta + ta + ta + n(tc) + n(tc) + ta
-        T= 7ta + 2ntc
-        
-        */
+        /*
+         * Tiempo total del metodo
+         * T= ta + ta + ta + ta + ta + ta + n(tc) + n(tc) + ta
+         * T= 7ta + 2ntc
+         * 
+         */
     }
 
 }
