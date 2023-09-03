@@ -163,7 +163,10 @@ public class FrmUsuarios_login extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Error al cifrar la contraseña");
             }
-
+            // TIEMPO TOTAL DEL METODO
+            // T= ta+ta+ta+ta+tc+tc+ta+tc+tc
+            // T= 5ta+4tc
+            // T= 4tc +5ta
         }
     }// GEN-LAST:event_jButton3ActionPerformed
 
